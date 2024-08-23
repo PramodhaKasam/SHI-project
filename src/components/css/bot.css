@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f0f4f8; 
+    color: #333;
+    padding-bottom: 100px;
+}
+
+.navbar {
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem; 
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.query-section {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+}
+
+.user-query {
+    font-size: 1.4rem;
+    color: #007bff; 
+    margin-bottom: 15px;
+    font-weight: 500; 
+}
+
+.response-text {
+    font-size: 1.2rem;
+    color: #555; 
+    margin-bottom: 15px;
+}
+
+.icon-section {
+    margin-top: -10px;
+    margin-left: 220px;
+    margin-bottom: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.icon{
+    font-size: 1.3rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    color: #0056b3; 
+}
+
+.footers {
+    padding: 15px 30px;
+    bottom:0;
+    width:100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    z-index: 1000;
+}
+
+.prompt-input-container{
+    width: 100%;
+}
+
+.prompt-input {
+    width: 97%;
+    padding: 12px 45px 12px 15px; 
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.prompt-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.prompt-input::placeholder {
+    color: #aaa;
+}
+
+.prompt-input-icon {
+    position: absolute;
+    right: 8%;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.prompt-input-icon:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .navbar, .footer {
+        font-size: 1.5rem; 
+        padding: 10px 20px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .query-section {
+        padding: 15px;
+    }
+
+    .prompt-input {
+        padding: 10px 12px;
+    }
+}
